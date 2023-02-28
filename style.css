@@ -1,0 +1,243 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #1c1a1a;
+    padding: 0px 20px;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    padding-right: 15px;
+}
+
+.buttons a {
+    color: black;
+    background: white;
+    font-size: 20px;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+.user,
+.nav_text {
+    display: flex;
+}
+
+.user button {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    position: relative;
+}
+
+.user p,
+.icon,
+.nav_text a {
+    color: white;
+}
+
+.searc_bar {
+    display: flex;
+    padding: 5px 0px;
+}
+
+.search_icon {
+    margin-left: -35px;
+    align-items: center;
+    display: flex !important;
+}
+
+.user {
+    border-left: 1px solid #b6b6b6;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: -90px;
+}
+
+.nav_text {
+    margin-left: -220px;
+}
+
+.nav_text a {
+    border-left: 1px solid #b6b6b6;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.searc_bar {
+    display: flex;
+    padding: 5px 10px;
+    border-left: 1px solid #b6b6b6;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.type {
+    padding: 0px 45px 0px 10px;
+    border: none;
+}
+
+i.fa-solid.fa-user {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    top: 5px;
+}
+
+.three {
+    display: none !important;
+}
+
+.dropdown {
+    cursor: pointer;
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-left: 1px solid #b6b6b6;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 3px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 7px;
+    border: none;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+
+    body {
+        margin: 00 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nav {
+        background-color: white;
+        padding: 0;
+        height: 41px !important;
+        justify-items: center;
+    }
+
+    .buttons,
+    .nav_text a,
+    .user,
+    .searc_bar {
+        height: 41px;
+        padding: 0px 10px;
+        margin: 0;
+    }
+
+    .nav_text a,
+    .type,
+    .user p {
+        display: none;
+    }
+
+    .nav_text {
+        margin: 0;
+    }
+
+    .one,
+    .two,
+    .three,
+    .dropdown .dropbtn {
+        color: black !important;
+        text-align: center;
+        justify-content: center;
+        display: flex !important;
+    }
+
+    .buttons a {
+        color: white;
+        background-color: black;
+    }
+
+    .icon,
+    .search_icon {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .user button {
+        background-color: black;
+        margin: 0;
+    }
+
+    i.fa-solid.fa-user {
+        color: white;
+    }
+
+    .dropdown-content {
+        display: none;
+        height: 120px;
+    }
+
+    .dropdown-content a {
+        display: flex;
+        font-size: 13px;
+        border: none;
+        text-align: center;
+        align-items: center;
+    }
+}
