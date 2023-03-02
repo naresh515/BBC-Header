@@ -234,6 +234,11 @@ i.fa-solid.fa-user {
     .dropdown-content {
         display: none;
         height: 120px;
+        padding: 10px 16px;
+    }
+
+    .dropdown .dropbtn {
+        padding: 10px 16px;
     }
 
     .dropdown-content a {
