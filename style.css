@@ -64,11 +64,6 @@ body {
     display: flex;
     align-items: center;
     padding-left: 30px;
-    margin-left: -90px;
-}
-
-.nav_text {
-    margin-left: -220px;
 }
 
 .nav_text a {
@@ -167,7 +162,7 @@ i.fa-solid.fa-user {
     display: block;
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
 
     body {
         margin: 00 auto;
